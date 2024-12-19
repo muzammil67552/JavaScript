@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <div>
+        <button type="button" onclick="bgColor()">Click Me</button>
+    </div>
+   
+    <script>
+        function bgColor() {
+            let bgColor = "yellow";
+            document.body.style.backgroundColor = bgColor;
+            console.log(`Background color changed to ${bgColor}`);
+        }
+    </script>
+</body>
+</html>
