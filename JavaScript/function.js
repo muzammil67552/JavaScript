@@ -70,3 +70,22 @@ function GetFullName (firstN, LastN) {
     console.log(FullName)
 }
 GetFullName("Muhammad", "Muzammil")
+
+// function
+
+var a = 5;
+function GetFullName (firstN, LastN) {
+    let FullName = firstN+ " " + LastN
+    console.log(FullName)
+}
+GetFullName("Muhammad", "Muzammil")
+console.log(a)
+
+// more function
+
+function number () {
+    var a = 10;
+    console.log(a)
+}
+number()
+
