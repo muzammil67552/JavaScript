@@ -43,4 +43,19 @@ function myfunction () {
 }
 myfunction() 
 
+// exampple of this keyword
+
+const mySecondObject = {
+     name:"Majid",
+     agr:"39",
+     city:"Multan",
+     country:"Pakistan",
+        Function(){
+            console.log(`${this.name}`)
+            
+        } 
+}
+
+mySecondObject.Function() // 
+
 
