@@ -90,5 +90,38 @@
 // number()
 
 
-let name;
-console.log(name);
+// // Function_Practice
+
+// // assigning function in variable 
+// var a = function () {
+//     console.log("My name is function");
+// }
+// a(); 
+
+// const Name = function () {         // i will call variable name not a function name in that case
+//     console.log("Muzammil"); 
+//     console.log("Name Is Muzammil"); 
+// } 
+// Name();
+
+// // passing perameter as an aurgument
+
+// function addNumbers(a, b) {
+//    return a + b;
+// }
+// console.log(addNumbers(2, 3));
+
+// arrow function
+
+function NormalFunction(a,b) {
+    console.log(arguments);
+    return (a+b)
+}
+console.log(NormalFunction(20,20));
+
+//Arrow function
+const arrow  = (...val) => console.log(val);
+arrow(40,20)
+    
+
+

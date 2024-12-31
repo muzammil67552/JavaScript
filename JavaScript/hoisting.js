@@ -274,3 +274,29 @@ console.log(d);
 var d = 50;
 d = 100;
 console.log(d);
+
+
+
+
+
+// Hoisting
+
+console.log(a);
+var a = "Muzammil"      // it is hoisted variable becuase of global var
+
+// console.log(b);
+// const b = "Muhammad"    // in hoisting we can not print befor its initialize in Const
+
+// console.log(c);
+// let c = "Khan"          // in hoisting the variable let can not be accessed befor thier initializing
+
+
+function FuncName () {
+    console.log("Hi There");
+    
+}
+FuncName();
+
+
+
+
