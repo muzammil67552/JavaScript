@@ -1,19 +1,60 @@
-// const myName = "Muzammil"; // Declare a variable using const
-// console.log(myName); // Output: Muzammil
 
-// myName = "Ali"; // Try reassigning the value
-// console.log(myName);  // Error Because It Is Not Change Able
+// // // // // Variables
 
-// Question 2: Understanding let Scope
-// Use let to declare a variable age inside a block { }. Try to access it outside the block and see what happens.
+// // // // // var : Function Scope , can be redeclared or updated It is Hoisted
+// // // // // let : Block Scope, csn not re declared in same scope 
+// // // // // cont : block scope, can nnot redeclared or not updated
 
-// Example:
-{
-    var myName= "Muhammad"  // execute
-}
-console.log(myName)
+// // // // // example\
 
-{
-    var myName="Khan"
-}
-console.log(myName)   //execute if we store const let inside block function then it will give error 
+// // // // {
+// // // //     var myNAme = "Muzammil"
+// // // //     var  myNAme = "Muhammad"
+// // // //     var myNAme = "Khan"   // i update dit
+// // // // }
+// // // // console.log(myNAme);
+// // // // console.log(myNAme);
+
+// // // // // let 
+
+// // // {
+// // //     let myName = "Muzammil";
+// // //    // let myName = "Muhammad"; // This will cause an error because let cannot be redeclared in the same scope
+// // //     myName = "Khan"; // This is allowed because let can be updated
+// // //     console.log(myName); // Output: Khan
+    
+// // // }
+
+// // {
+// //     let name = "is/name"
+// //     name = "is not name yes my name is not name " // this will  not give an error bcs in let  variable it can  updated as well 
+// //     console.log(name);
+    
+// // }
+
+// {
+//     let newPractice = "Practice"
+//     newPractice="yes it is Updated Practice"
+//     console.log(newPractice);
+    
+// }
+
+// {
+//     let blocklet = "let Variabble Expample"
+//     blocklet = "yes"
+//     console.log(blocklet);
+    
+// }
+
+// const myname = "Muzii"
+// const myname = "Muzammil" // these will give error about already taken becs in js variable const variable it can not redeclared or not updatewd 
+// console.log(myname);
+
+
+
+{let name;
+console.log(name);}  // result will be undefined
+
+{let namenull = null;
+console.log(namenull);}
+

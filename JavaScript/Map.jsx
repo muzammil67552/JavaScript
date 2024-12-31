@@ -38,3 +38,4 @@ const Obj = [
 ];
 const FilterObj = Obj.filter((val) => val.age > 20);
 console.log(FilterObj);
+queueMicrotask

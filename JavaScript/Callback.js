@@ -1,21 +1,17 @@
 
-
-function firstname() {
-    setTimeout(() => {
-        console.log("My name is Fiesrt function")
-    }, 2000);
-   
+function firstName(name, callback) {
+        console.log(`My name is First function ${name}`)
+        callback()
 }
-function secondname() {
+function secondName() {                      // we call the second function in first function as in aurgument
     console.log("My name is Second function")
  }
 
- function thirdname() {
-    console.log("My name is third function")
+ function thirdName() {
+    console.log("My name is Third function")
  }
 
 
- firstname()
- secondname()
- thirdname()
+ firstName("Muzammil", secondName)
+ thirdName()
 
