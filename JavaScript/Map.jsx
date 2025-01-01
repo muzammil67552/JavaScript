@@ -75,23 +75,49 @@
 
 //  New Practice
 
-const Data = [
-    [
-        { "name": "Muzammil", "contact": "5464564554", "location": "Karachi", "status": "Student" },
-        { "name": "Ahmed", "contact": "9876543210", "location": "Lahore", "status": "Student" },
-        { "name": "Ali", "contact": "1234567890", "location": "Islamabad", "status": "Student" },
-        { "name": "Sara", "contact": "2345678901", "location": "Peshawar", "status": "Student" },
-        { "name": "Ayesha", "contact": "3456789012", "location": "Karachi", "status": "Student" },
-        { "name": "Hamza", "contact": "4567890123", "location": "Quetta", "status": "Student" },
-        { "name": "Fatima", "contact": "5678901234", "location": "Multan", "status": "Student" },
-        { "name": "Zain", "contact": "6789012345", "location": "Karachi", "status": "Student" },
-        { "name": "Hassan", "contact": "7890123456", "location": "Rawalpindi", "status": "Student" },
-        { "name": "Noor", "contact": "8901234567", "location": "Hyderabad", "status": "Student" }
-    ]
+// const Data = [
+//     [
+//         { name: "Muzammil", "contact": "5464564554", "location": "Karachi", "status": "Student" },
+//         { name: "Ahmed", "contact": "9876543210", "location": "Lahore", "status": "Student" },
+//         { name: "Ali", "contact": "1234567890", "location": "Islamabad", "status": "Student" },
+//         { name: "Sara", "contact": "2345678901", "location": "Peshawar", "status": "Student" },
+//         { name: "Ayesha", "contact": "3456789012", "location": "Karachi", "status": "Student" },
+//         { name: "Hamza", "contact": "4567890123", "location": "Quetta", "status": "Student" },
+//         { name: "Fatima", "contact": "5678901234", "location": "Multan", "status": "Student" },
+//         { name: "Zain", "contact": "6789012345", "location": "Karachi", "status": "Student" },
+//         { name: "Hassan", "contact": "7890123456", "location": "Rawalpindi", "status": "Student" },
+//         { name: "Noor", "contact": "8901234567", "location": "Hyderabad", "status": "Student" }
+//     ]
+// ]
+//  for (let index = 0; index < Data.length; index++) {
+//       console.log(Data[index][5]);   
+//  }
+//  Data.forEach(function(Data){
+//      console.log(Data.name);
+//  })
+
+// Reduce function in java script
+
+const ReduceData = [
+    {
+        name: "Ali", "contact": "1234567890", "location": "Islamabad", "status": "Student"
+    },
+    {
+        name: "Ali", "contact": "1234567890", "location": "Islamabad", "status": "Student"
+    },
+    {
+        name: "Ali", "contact": "1234567890", "location": "Islamabad", "status": "Student"
+    }
 ]
-for (let index = 0; index < Data.length; index++) {
-     console.log(Data[index][5]);
-     
-}
+
+const mainReduceObj = ReduceData.reduce(function(total, contact){
+    return total + parseInt(contact.contact);
+}, 0);
+console.log(mainReduceObj)
+
+
+
+
+
 
 

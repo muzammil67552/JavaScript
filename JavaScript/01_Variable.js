@@ -56,5 +56,5 @@
 console.log(name);}  // result will be undefined
 
 {let namenull = null;
-console.log(namenull);}
+console.log(namenull);}  // these will give us result null 
 
